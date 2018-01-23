@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form>
+First Number: <input type="text" name="a"> <br>
+
+Second Number: <input type="text" name="b"> <br>
+
+Third Number: <input type="text" name="c"> <br>
+<input type="button" onclick ="sort(this.form)" value="DO YOUR THING JS">
+
+<input type="text" name="firstOrder">
+
+<script>
+        function sort(form){
+            var numArray = [form.a.value, form.b.value, form.c.value]
+            numArray = numArray.sort(function (a, b) {  return a - b;  });
+
+            form.firstOrder.value = numArray.sort(function (a, b) {  return a - b;  });
+             
+        }
+
+</script>
+</form>
+</body>
+</html>

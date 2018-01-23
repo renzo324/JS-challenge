@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input 2 numbers and spit out the larger man</title>
+	
+</head>
+<body>
+<form>
+First Number: <input type="text" name="num1"> <br>
+
+Second Number: <input type="text" name="num2"> <br>
+<input type="button" onclick ="large(this.form)" value="DO YOUR THING JS">
+
+<input type="text" name="theLargerman">
+</form>
+<script>
+        function large(form){
+            var x  = form.num1.value
+            var y = form.num2.value
+
+            form.theLargerman.value = Math.max(x,y);
+             
+        }
+
+    </script><!-- 
+    <script>
+       function age2(form){
+              var a = parseInt(form.num1.value);
+              var b = parseInt(form.num2.value);
+              if (a>b){
+             form.theLargerman.value  = a;
+          } else{
+               form.theLargerman.value  = b;
+          }
+     }
+   </script>
+ --></body>
+</html>
